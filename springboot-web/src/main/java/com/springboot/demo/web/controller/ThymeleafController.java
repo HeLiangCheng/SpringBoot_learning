@@ -23,7 +23,7 @@ public class ThymeleafController {
     public String index(ModelMap map) {
         // 加入一个属性，用来在模板中读取
         map.addAttribute("name", "liangcheng");
-        // return模板文件的名称，对应src/main/resources/templates/index.html
+        // return模板文件的名称，对应src/main/resources/templates//thymeleaf/index.vm
         return "/thymeleaf/index";
     }
 
@@ -31,7 +31,7 @@ public class ThymeleafController {
     public String userlist(ModelMap map) {
         List<User> userList=userService.findUserList();
         map.addAttribute("userList", userList);
-        return "/thymeleaf/userlist";
+        return "/thymeleaf/userList";
     }
 
 }

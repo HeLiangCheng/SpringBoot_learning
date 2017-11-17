@@ -3,23 +3,28 @@
 <head>
     <meta charset="UTF-8"/>
     <title>User List</title>
+    <link rel="stylesheet" href="/css/bootstrap.css" />
 </head>
+
 <body>
-    <table>
-        <thead>
-            <tr>
-                <td>Id</td>
-                <td>Name</td>
-                <td>Age</td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr th:each="item : ${userList}">
-                <td th:text="${item.id}"></td>
-                <td th:text="${item.name}"></td>
-                <td th:text="${item.age}"></td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="container">
+        <h3>Thymeleaf 模板引擎</h3>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <td>Id</td>
+                    <td>Name</td>
+                    <td>Age</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="item : ${userList}">
+                    <td th:text="${item.id}"></td>
+                    <td th:text="${item.name}"></td>
+                    <td th:text="${item.age}"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>

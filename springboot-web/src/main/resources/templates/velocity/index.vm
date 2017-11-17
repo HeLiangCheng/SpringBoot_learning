@@ -5,7 +5,7 @@
         <title></title>
     </head>
     <body>
-        FreeMarker模板引擎
-        <h1>${name}</h1>
+        <h3>velocity模板引擎</h3>
+        <h1>$name 或者使用 ${name}</h1>
     </body>
 </html>

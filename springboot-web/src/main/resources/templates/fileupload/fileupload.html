@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>文件上传测试</title>
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+</head>
+<body>
+    <div class="container">
+        <h3>文件上传</h3>
+        <form method="POST" enctype="multipart/form-data" action="/file/upload">
+            <p>文件：<input type="file" name="file" /></p>
+            <p><input type="submit" value="上传" /></p>
+        </form>
+        <div>
+            <p th:text="${msg}"></p>
+        </div>
+    </div>
+</body>
+</html>
